@@ -1,7 +1,7 @@
 import React from "react";
 
-const BlogCard = () => {
+const Intro = () => {
   return <div>This is my BlogCard - Abiton & Atom</div>;
 };
 
-export default BlogCard;
+export default Intro;
