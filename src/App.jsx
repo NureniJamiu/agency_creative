@@ -18,7 +18,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-black text-[#F5F5F5]">
+    <div className="bg-black font-Poppins text-[#F5F5F5]">
       <Navbar />
       <Intro />
       <About />
