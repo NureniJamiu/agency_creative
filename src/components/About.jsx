@@ -1,33 +1,38 @@
 import React from "react";
 import about_img from "../Images/about_img.png";
 import SectionTitle from "./SectionTitle";
+import { AiOutlinePlayCircle } from "react-icons/ai";
 
 export default function About() {
   return (
-    <div className="flex-col text-justify justify-center">
+    <div className="flex-col text-justify justify-center mx-5">
       <SectionTitle sectionName="About Us" sectionDesc="Our Teammate" />
-      <p className="p-1 m-2 text-sm">
-        We move with make a Creative Strategy for help your business goal, we
-        help to improve your income by a services we have. make your content
-        look interesting and make people look for your business2
-      </p>
-      <p className="p-1 m-2 text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu neque tempor
-        at ut auctor maecenas,Lorem ipsum d
-      </p>
+      <div className="text-[15px] text-gray-300">
+        <p>
+          We move with make a Creative Strategy for help your business goal, we
+          help to improve your income by a services we have. make your content
+          look interesting and make people look for your business
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu neque
+          tempor at ut auctor maecenas,Lorem ipsum
+        </p>
+      </div>
 
       {/* buttons - about us */}
-      <div className="flex m-3 justify-evenly">
+      <div className="flex mt-8 justify-evenly">
         <button className="bg-[#E2E2E2] text-black text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36">
           About us
         </button>
-        <button className=" border-neutral-200 border-2 text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36">
+        <button className="flex items-center gap-3 border-[1.5px] border-neutral-100 text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36">
+          <AiOutlinePlayCircle className="text-lg" />
           About us
         </button>
       </div>
       {/* image - 2nd img in page */}
-      <div className="mt-5">
-        <img src={about_img} />
+      <div className="my-12">
+        <img src={about_img} className="w-full" />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Intro = () => {
           Make your dream <br />
           business goal come true
         </h1>
-        <p className="text-md mb-10 w-96 mx-auto text-gray-300">
+        <p className="text-[15px] mb-10 w-96 mx-auto text-gray-300 px-5">
           {/* removed <br/> tags and instead set a width of 24rem (w-96) and a "mx-auto" to center the paragraph element horizontally. Doing it this way will help a lot when it comes to making it responsive*/}
           when you need us for improve your business, then come with us to help
           your business have reach it, you just sit and feel that goal.
