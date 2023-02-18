@@ -3,9 +3,9 @@ import intro_img from "../Images/intro_img.png";
 
 const Intro = () => {
   return (
-    <div className="flex-col ">
+    <div className="flex-col px-2">
       <div className="text-center">
-        <h1 className="p-4 text-3xl font-bold text-gray-200 ">
+        <h1 className="mt-6 mb-4 text-3xl font-extrabold text-gray-200 ">
           Make your dream <br />
           business goal come true
         </h1>
@@ -22,7 +22,8 @@ const Intro = () => {
 
         {/* Image - 1st in the page */}
         <div className="align-middle mt-5">
-          <img src={intro_img} />
+          {/* set a width of 100% to ensure that the image takes up the entire width of the device screen (mobile phones, tablets, and even large screens) - Helps in responsiveness of design */}
+          <img src={intro_img} className="w-full" />
         </div>
       </div>
     </div>
