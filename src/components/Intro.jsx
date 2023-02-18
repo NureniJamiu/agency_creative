@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <div className="flex-col ">
       <div className="text-center">
-        <h1 className="p-4 text-[28px] font-extrabold ">
+        <h1 className="p-4 text-3xl font-bold text-gray-200 ">
           Make your dream <br />
           business goal come true
         </h1>
