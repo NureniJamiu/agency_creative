@@ -1,15 +1,31 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from '../Images/logo.png'
 
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center p-[25px]">
-      <h3 className="text-lg">
-        Agency<span className="font-bold">Creative</span>
-      </h3>
-      <div className="flex justify-between gap-3">
-        <a className="cursor-pointer hover:text-blue-600">about</a>
-        <a className="cursor-pointer hover:text-blue-600">blog</a>
-        <a className="cursor-pointer hover:text-blue-600">contact</a>
+       <img src={logo}/>
+          <div className="flex justify-between gap-3">
+            {/* hamburger for navbar */}
+            <nav class="container flex justify-between px-4 py-8 mx-auto bg-white">
+               
+               <div class="hidden space-x-8 lg:flex">
+                  <Link to="/">Home</Link>
+                    <Link to="/About">About</Link>
+                      <Link to="/Action">Services</Link>
+                        <Link to="/Contact">Projects</Link>
+                          </div>
+
+                  <div class="flex lg:hidden">
+                     <div class="space-y-2">
+                        <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                           <span class="block w-6 h-0.5 bg-gray-600 animate-pulse ml-1"></span>
+                             <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                                </div>
+                                    </div>
+            </nav>
+
       </div>
     </div>
   );
