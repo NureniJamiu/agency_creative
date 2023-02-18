@@ -1,11 +1,12 @@
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
 export default function Portifolio() {
   return (
     <div>
       <div className="flex-col text-justify justify-center">
-        <h6 className="text-center mt-12">Our Portifolio</h6>
-        <h1 className="text-center mb-7 text-2xl font-bold">What we do</h1>
+        <SectionTitle sectionName="Our Portfolio" sectionDesc="What do we do" />
+
         <p className="p-1 m-2 text-sm">
           We move with make a Creative Strategy for help your business goal, we
           help to improve your income by a services we have. make your content

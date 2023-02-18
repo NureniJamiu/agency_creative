@@ -1,11 +1,11 @@
 import React from "react";
 import about_img from "../Images/about_img.png";
+import SectionTitle from "./SectionTitle";
 
 export default function About() {
   return (
     <div className="flex-col text-justify justify-center">
-      <h6 className="text-center mt-12">About us</h6>
-      <h1 className="text-center mb-7 text-2xl font-bold">Our Teammate</h1>
+      <SectionTitle sectionName="About Us" sectionDesc="Our Teammate" />
       <p className="p-1 m-2 text-sm">
         We move with make a Creative Strategy for help your business goal, we
         help to improve your income by a services we have. make your content
