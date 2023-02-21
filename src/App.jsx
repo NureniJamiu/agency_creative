@@ -4,16 +4,13 @@ import { Link } from "react-router-dom";
 import {
   About,
   Action,
-  Contact,
   Intro,
   Navbar,
-  Portifolio,
+  Portfolio,
   Services,
   Testimonials,
-  Work,
-  Toggle
+  Footer,
 } from "./components";
-
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,16 +18,13 @@ function App() {
   return (
     <div className="bg-[#0D0D0D] font-Nunito text-[#F5F5F5]">
       <Navbar />
-      <Toggle/>
       <Intro />
       <About />
       <Services />
-      <Work/>
-      <Portifolio />
+      <Portfolio />
       <Testimonials />
       <Action />
-      <Contact />
-     
+      <Footer />
     </div>
   );
 }

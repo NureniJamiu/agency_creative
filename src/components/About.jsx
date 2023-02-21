@@ -5,7 +5,7 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 
 export default function About() {
   return (
-    <div className="flex-col text-justify justify-center mx-5">
+    <div className="flex-col justify-center mx-5">
       <SectionTitle sectionName="About Us" sectionDesc="Our Teammate" />
       <div className="text-[15px] text-gray-300">
         <p>
@@ -16,7 +16,7 @@ export default function About() {
         <br />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu neque
-          tempor at ut auctor maecenas,Lorem ipsum
+          tempor at ut auctor maecenas,Lorem ipsum consectetur adipiscing elit.
         </p>
       </div>
 

@@ -9,14 +9,14 @@ const Intro = () => {
           Make your dream <br />
           business goal come true
         </h1>
-        <p className="text-[15px] mb-10 w-96 mx-auto text-gray-300 px-5">
+        <p className="text-[15px] mb-10 text-gray-300 px-5">
           {/* removed <br/> tags and instead set a width of 24rem (w-96) and a "mx-auto" to center the paragraph element horizontally. Doing it this way will help a lot when it comes to making it responsive*/}
           when you need us for improve your business, then come with us to help
           your business have reach it, you just sit and feel that goal.
         </p>
 
         {/* Changed the button to have a background set to white and blue when hovered on and also change the text colors respectively, and finally a little bit of transition to spice it up */}
-        <button className="bg-white text-black text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36 hover:bg-[#377DFF] hover:text-white transition-all duration-200">
+        <button className="bg-white text-black text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36 transition-all shadow-lg shadow-blue-300 duration-200 hover:translate-y-2 hover:shadow-md hover:shadow-blue-300">
           Start Project
         </button>
 

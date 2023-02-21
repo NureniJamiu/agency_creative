@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between gap-3">
           {/* hamburger for navbar */}
-          <nav className="container flex justify-between px-4 py-8 mx-auto bg-black">
+          <nav className="container flex justify-between px-4 py-8 mx-auto">
             <div className="hidden space-x-8 md:flex">
               <Link to="/">Home</Link>
               <Link to="/About">About</Link>
