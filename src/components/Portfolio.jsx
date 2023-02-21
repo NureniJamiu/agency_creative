@@ -24,7 +24,7 @@ const Portfolio = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative flex flex-col justify-center px align-center hover:scale-105 transition-all duration-200"
+            className="relative flex flex-col justify-center px align-center md:hover:scale-105 transition-all duration-200"
           >
             <img src={project.image} alt={project.text} className="w-full" />
             <h3 className="absolute bottom-2 left-2 font-bold text-xl">
