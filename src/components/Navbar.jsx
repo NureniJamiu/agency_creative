@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <small className="bg-black border-[2px] border-gray-300 text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center">
+        <small className="hidden md:flex bg-black border-[2px] border-gray-300 text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center">
           Contact us
         </small>
       </nav>
