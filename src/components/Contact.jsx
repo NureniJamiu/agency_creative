@@ -24,7 +24,7 @@ export default function Contact() {
       </div>
 
 {/* social media icons */}
-<div className='flex mt-10 ml '>
+<div className='flex mt-10 justify-center'>
 
 <ul className="flex gap-[25px] justify-center items-center mb-2">
                                                                 

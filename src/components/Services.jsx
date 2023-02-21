@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SectionTitle from "./SectionTitle";
 import { BsArrowRight } from "react-icons/bs";
+import Work from "./Work";
 
 export default function Services() {
   return (
@@ -21,13 +22,6 @@ export default function Services() {
             Read more <BsArrowRight className="text-lg" />
           </span>
         </Link>
-      </div>
-      {/* services icons */}
-      {/* Make sure that you're using a reusable component here */}
-      <div>
-        <div className="flex-col ">
-          <p>Social Media Management</p>
-        </div>
       </div>
     </div>
   );

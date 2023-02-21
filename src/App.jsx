@@ -10,7 +10,9 @@ import {
   Portifolio,
   Services,
   Testimonials,
+  Work
 } from "./components";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +23,7 @@ function App() {
       <Intro />
       <About />
       <Services />
+      <Work/>
       <Portifolio />
       <Testimonials />
       <Action />
