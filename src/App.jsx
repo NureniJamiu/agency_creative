@@ -9,7 +9,6 @@ import {
   Navbar,
   Portifolio,
   Services,
-  SocialMedia,
   Testimonials,
 } from "./components";
 
@@ -26,7 +25,7 @@ function App() {
       <Testimonials />
       <Action />
       <Contact />
-      <SocialMedia />
+     
     </div>
   );
 }

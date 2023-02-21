@@ -3,3 +3,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: black;
+    color: #F5F5F5;
+}
+
+.parent{
+    position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px;
+}
+
+ .bottom_image{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    
+}
+
+.top_image{
+    position: relative;
+        top: 130px;
+        left: 75px;
+
+}
