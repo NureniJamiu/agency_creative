@@ -4,11 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
-    color: #F5F5F5;
-}
 
+
+/* positioning the images in the Action Component */
 .parent{
     position: relative;
         top: 0;

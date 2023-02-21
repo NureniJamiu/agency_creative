@@ -10,7 +10,8 @@ import {
   Portifolio,
   Services,
   Testimonials,
-  Work
+  Work,
+  Toggle
 } from "./components";
 
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="bg-[#0D0D0D] font-Nunito text-[#F5F5F5]">
       <Navbar />
+      <Toggle/>
       <Intro />
       <About />
       <Services />

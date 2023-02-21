@@ -7,4 +7,6 @@ export { default as Portifolio } from "./Portifolio";
 export { default as Testimonials } from "./Testimonials";
 export { default as Action } from "./Action";
 export { default as Contact } from "./Contact";
+export { default as Toggle } from "./Toggle";
+
 
