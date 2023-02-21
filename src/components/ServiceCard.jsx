@@ -12,7 +12,7 @@ const ServiceCard = ({
   };
   return (
     <div
-      className="w-60 h-64 flex mb-10 md:mb-0 flex-col justify-evenly items-center border-[1px] rounded-3xl py-8 md:w-48 md:h-44 lg:w-60"
+      className="w-60 h-64 flex mb-10 md:mb-0 flex-col justify-evenly items-center border-[1px] rounded-3xl py-8 md:w-48 md:h-48 lg:w-60 hover:scale-105 transition-all duration-200"
       style={cardStyles}
     >
       <div
