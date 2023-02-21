@@ -11,28 +11,42 @@ const Footer = () => {
   return (
     <div className="py-10 px-5 md:px-10 lg:px-28 bg-[#383638] ">
       <div className="mb-5">
-        <img src={logo} alt="logo" className="w-32" />
+        <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
       <div className="md:flex gap-28">
         <div className="md:flex-1 flex justify-between">
           <div className="text-sm">
             <p className=" font-bold text-base">Terms & Policies</p>
-            <p className="py-1 capitalize">Terms of services</p>
-            <p className="py-1 capitalize">Privacy Policy</p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              Terms of services
+            </p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              Privacy Policy
+            </p>
           </div>
           <div className="text-sm">
             <p className="font-bold text-base">Company</p>
-            <p className="py-1 capitalize">Home</p>
-            <p className="py-1 capitalize">About Us</p>
-            <p className="py-1 capitalize">Contact Us</p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              Home
+            </p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              About Us
+            </p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              Contact Us
+            </p>
           </div>
         </div>
 
         <div className="md:flex-1 flex flex-col gap-10 md:flex-row">
           <div className="text-sm">
             <p className=" font-bold text-base">Contact</p>
-            <p className="py-1 capitalize">(+123) 0011223344</p>
-            <p className="py-1 capitalize">agencycr@gmail.com</p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              (+123) 0011223344
+            </p>
+            <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
+              agencycr@gmail.com
+            </p>
           </div>
           <div className="text-sm">
             <p className="font-bold text-base">Location</p>
@@ -47,19 +61,19 @@ const Footer = () => {
       </div>
 
       <div className=" mt-5 flex gap-2 justify-center">
-        <span className="flex justify-center items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
+        <span className="flex justify-center hover:text-blue-500 items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
           <FiFacebook />
         </span>
-        <span className="flex justify-center items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
+        <span className="flex justify-center hover:text-blue-500 items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
           <FiInstagram />
         </span>
-        <span className="flex justify-center items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
+        <span className="flex justify-center hover:text-blue-500 items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
           <FiLinkedin />
         </span>
-        <span className="flex justify-center items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
+        <span className="flex justify-center hover:text-blue-500 items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
           <FiMail />
         </span>
-        <span className="flex justify-center items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
+        <span className="flex justify-center hover:text-blue-500 items-center bg-white rounded-full text-black w-8 h-8 text-xl cursor-pointer">
           <FiTwitter />
         </span>
       </div>
