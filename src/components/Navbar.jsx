@@ -12,18 +12,26 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex justify-between items-center px-[25px]">
+      <nav className="flex justify-between items-center px-[25px]">
         <div className="cursor-pointer">
           <img src={logo} />
         </div>
         <div className="flex justify-between gap-3">
           {/* hamburger for navbar */}
-          <nav className="container flex justify-between px-4 py-8 mx-auto">
-            <div className="hidden space-x-8 md:flex">
-              <Link to="/">Home</Link>
-              <Link to="/About">About</Link>
-              <Link to="/Action">Services</Link>
-              <Link to="/Contact">Projects</Link>
+          <div className="container flex justify-between px-4 py-8 mx-auto">
+            <div className="hidden space-x-8 md:flex text-sm">
+              <Link to="/" className="hover:text-blue-400">
+                Home
+              </Link>
+              <Link to="/About" className="hover:text-blue-400">
+                About
+              </Link>
+              <Link to="/Action" className="hover:text-blue-400">
+                Services
+              </Link>
+              <Link to="/Contact" className="hover:text-blue-400">
+                Projects
+              </Link>
             </div>
 
             <div
@@ -36,9 +44,12 @@ const Navbar = () => {
                 <AiOutlineClose className="text-3xl" />
               )}
             </div>
-          </nav>
+          </div>
         </div>
-      </div>
+        <small className="bg-black border-[2px] border-gray-300 text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center">
+          Contact us
+        </small>
+      </nav>
       <div
         className={`${
           !isOpen ? "hidden" : "flex py-5"
