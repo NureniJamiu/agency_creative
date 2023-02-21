@@ -36,7 +36,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 md:flex-1  my-10 md:my-0 justify-center items-center md:gap-10">
+        <div className="grid md:grid-cols-2 md:flex-1 my-10 md:my-0 justify-center items-center md:gap-10 lg:gap-20">
           <ServiceCard
             text="Social Media Management"
             card_bg="#0B0F15"
