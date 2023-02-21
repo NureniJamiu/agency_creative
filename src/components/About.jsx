@@ -24,10 +24,10 @@ export default function About() {
           </div>
 
           <div className="flex mt-8 justify-evenly md:w-[420px] md:float-right">
-            <button className="bg-[#E2E2E2] text-black text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36">
+            <button className="bg-[#E2E2E2] text-black text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36 hover:translate-y-1 transition-all duration-200 font-bold">
               About us
             </button>
-            <button className="flex items-center gap-3 border-[1.5px] border-neutral-100 text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36">
+            <button className="flex items-center gap-3 border-[1.5px] border-neutral-100 text-sm rounded-3xl py-2.5 px-2.5 justify-center w-36 hover:translate-y-1 transition-all duration-200 font-bold">
               <AiOutlinePlayCircle className="text-lg" />
               About us
             </button>
