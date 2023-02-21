@@ -8,3 +8,4 @@ export { default as Testimonials } from "./Testimonials";
 export { default as Action } from "./Action";
 export { default as Footer } from "./Footer";
 export { default as Toggle } from "./Toggle";
+export { default as TestimonialCard } from "./TestimonialCard";
