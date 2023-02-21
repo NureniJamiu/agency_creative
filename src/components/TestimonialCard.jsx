@@ -1,6 +1,6 @@
 const TestimonialCard = ({ avatar, name, position }) => {
   return (
-    <div className="flex flex-col bg-[#0B0F15] rounded-lg w-80 h-60 px-5">
+    <div className="flex flex-col bg-[#0B0F15] rounded-lg w-80 h-60 px-5 md:hover:scale-105 transition-all duration-200">
       <div className="flex items-center my-5 gap-5">
         <div className="bg-white rounded-full">
           <img src={avatar} alt="avatar" className="w-16 h-16" />
