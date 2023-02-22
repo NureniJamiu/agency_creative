@@ -64,7 +64,7 @@ const Navbar = () => {
       <div
         className={`${
           !isOpen ? "hidden" : "flex py-5"
-        } flex-col gap-5 transition-all duration-200 px-8 shadow shadow-gray-700 rounded-b-lg`}
+        } flex-col gap-5 transition-all duration-200 px-8 shadow shadow-gray-700 dark:bg-[#0d0d0d] rounded-b`}
       >
         <Link to="/">
           <p className="hover:border-b-0 hover:border-l-2 border-blue-300 hover:pl-2 transition-all duration-200">
