@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
+import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="flex justify-between items-center px-[25px]">
+      <nav className="flex justify-between items-center px-[25px] dark:bg-[#0D0D0D] dark:text-white">
         <div className="cursor-pointer">
           <img src={logo} />
         </div>
@@ -46,9 +47,19 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <small className="hidden md:flex bg-black border-[2px] border-gray-300 text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center hover:bg-gray-300 hover:text-black cursor-pointer transition duration-200">
-          Contact us
-        </small>
+        <div className="flex items-center gap-5 ">
+          <div className="flex gap-5 bg-zinc-800 px-5 py-2 rounded-full">
+            <span className="">
+              <BsSunFill />
+            </span>
+            <span>
+              <BsMoonFill />
+            </span>
+          </div>
+          <small className="hidden md:flex bg-black border-[2px] border-gray-300 text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center hover:bg-gray-300 hover:text-black cursor-pointer transition duration-200">
+            Contact us
+          </small>
+        </div>
       </nav>
       <div
         className={`${
@@ -81,5 +92,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// Need attention:
-// ! links not active yet, needs a route

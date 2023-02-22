@@ -11,7 +11,7 @@ import { RiAdvertisementLine } from "react-icons/ri";
 
 const Services = () => {
   return (
-    <div className="pt-3 mx-5 md:mx-10 lg:mx-28 text-justify justify-center">
+    <div className="pt-3 px-5 md:px-10 lg:px-28 text-justify justify-center dark:bg-[#0d0d0d]">
       <SectionTitle
         sectionName="Our Services"
         sectionDesc="Perfect and Fast Movement"
@@ -22,14 +22,14 @@ const Services = () => {
           <h3 className="hidden md:block w-56 text-2xl font-bold mb-5">
             Perfect and Fast Movement
           </h3>
-          <p className="text-[15px] text-gray-300 mb-5 text-center md:text-left md:w-96">
+          <p className="text-[15px] text-zinc-800 dark:text-gray-300 mb-5 text-center md:text-left md:w-96">
             We move with make a Creative Strategy for help your business goal,
             we help to improve your income by a services we have. make your
             content look interesting and make people look for your business
           </p>
-          <div className="text-white font-semibold">
+          <div className="text-zinc-800 dark:text-gray-100 font-semibold">
             <Link to="#">
-              <span className="text-sm flex items-center gap-2 transition duration-200 hover:translate-x-2 hover:text-blue-400">
+              <span className="text-sm flex items-center gap-2 transition duration-200 hover:translate-x-2 text-blue-600">
                 Read more <BsArrowRight className="text-lg" />
               </span>
             </Link>

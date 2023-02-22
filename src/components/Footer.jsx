@@ -10,13 +10,13 @@ import {
 const Footer = () => {
   return (
     <div className="py-10 px-5 md:px-10 lg:px-28 bg-[#383638] ">
-      <div className="mb-5">
+      <div className="mb-8">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
       <div className="md:flex gap-28">
         <div className="md:flex-1 flex justify-between">
-          <div className="text-sm">
-            <p className=" font-bold text-base">Terms & Policies</p>
+          <div className="text-sm text-white ">
+            <p className=" font-bold text-base mb-2">Terms & Policies</p>
             <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
               Terms of services
             </p>
@@ -24,8 +24,8 @@ const Footer = () => {
               Privacy Policy
             </p>
           </div>
-          <div className="text-sm">
-            <p className="font-bold text-base">Company</p>
+          <div className="text-sm text-white ">
+            <p className="font-bold text-base  mb-2">Company</p>
             <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
               Home
             </p>
@@ -39,8 +39,8 @@ const Footer = () => {
         </div>
 
         <div className="md:flex-1 flex flex-col gap-10 md:flex-row">
-          <div className="text-sm">
-            <p className=" font-bold text-base">Contact</p>
+          <div className="text-sm text-white ">
+            <p className=" font-bold text-base mb-2">Contact</p>
             <p className="py-1 capitalize cursor-pointer hover:text-blue-400">
               (+123) 0011223344
             </p>
@@ -48,8 +48,8 @@ const Footer = () => {
               agencycr@gmail.com
             </p>
           </div>
-          <div className="text-sm">
-            <p className="font-bold text-base">Location</p>
+          <div className="text-sm text-white ">
+            <p className="font-bold text-base mb-2">Location</p>
             <p className="py-1 capitalize">
               PT Osiris Road Real Estate International
             </p>
@@ -78,7 +78,7 @@ const Footer = () => {
         </span>
       </div>
 
-      <p className="border-t-2 py-5 mt-5 text-sm text-center">
+      <p className="border-t-2 py-5 mt-5 text-sm text-center text-white ">
         Copyright @ 2022 Agency Creative. All Right Reserved
       </p>
     </div>

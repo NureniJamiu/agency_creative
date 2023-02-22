@@ -14,9 +14,9 @@ import {
 
 function App() {
   const [count, setCount] = useState(0);
-
+  // bg-[#0D0D0D] text-[#F5F5F5]
   return (
-    <div className="bg-[#0D0D0D] font-Nunito text-[#F5F5F5]">
+    <div className="dark:bg[#0d0d0d] dark:text-[#f5f5f5] bg-white text-black font-Nunito ">
       <Navbar />
       <Intro />
       <About />
