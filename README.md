@@ -9,6 +9,7 @@ We used the following technologies to build this project:
 - React
 - Vite
 - TailwindCSS
+- Netlify
 
 ## Project Description
 
@@ -16,7 +17,7 @@ Our landing page showcases a modern agency website with a focus on clean design 
 
 One of the key features of our landing page is the toggle functionality for light and dark themes. Users can switch between the two themes with ease, making the website more accessible and user-friendly.
 
-We used React to build the website's front-end, Vite for fast and efficient development, and TailwindCSS for styling and layout. We also implemented various animations and transitions to enhance the user experience.
+We used React to build the website's front-end, Vite for fast and efficient development, TailwindCSS for styling and layout, and Netlify to deploy the project. We also implemented various animations and transitions to enhance the user experience.
 
 ## Getting Started
 
