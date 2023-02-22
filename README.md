@@ -20,22 +20,25 @@ We used React to build the website's front-end, Vite for fast and efficient deve
 
 ## Getting Started
 
-To get started with our project, you can clone the repository and run it on your local machine. Follow these steps:
+To get started with our project, click [here](https://agencycreatiive.netlify.app) to view it live in your browser or you can clone the repository and run it on your local machine. Follow these steps:
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/NureniJamiu/agency-landing-page.git
-
+```
 
 2. Install dependencies:
 
+```bash
 npm install
-
+```
 
 3. Run the project:
 
+```bash
 npm run dev
-
+```
 
 This will start the development server and open the website in your browser. From here, you can explore the website and see how it works.
 
