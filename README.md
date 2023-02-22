@@ -26,7 +26,7 @@ To get started with our project, click [here](https://agencycreatiive.netlify.ap
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/NureniJamiu/agency-landing-page.git
+git clone https://github.com/NureniJamiu/agency_creative.git
 ```
 
 2. Install dependencies:
