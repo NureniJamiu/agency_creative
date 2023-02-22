@@ -51,22 +51,54 @@ const Navbar = () => {
         <div className="cursor-pointer">
           {isActive === "sun" ? <img src={logo2} /> : <img src={logo} />}
         </div>
-        <div className="flex justify-between gap-3">
+        <div className="flex justify-between items-center gap-3">
           {/* hamburger for navbar */}
-          <div className="container flex justify-between px-4 py-8 mx-auto">
-            <div className="hidden space-x-8 md:flex text-sm">
-              <Link to="/" className="hover:text-blue-400">
+          <div className="container gap-6 flex items-center justify-between px-4 py-5">
+            <div className="hidden space-x-10 md:flex items-center text-sm">
+              <Link
+                to="/"
+                className="hover:text-blue-600 border-b-2 dark:border-b-[#0d0d0d] dark:hover:border-blue-600 border-b-white py-2 hover:border-b-blue-600 transition-all duration-200"
+              >
                 Home
               </Link>
-              <Link to="/About" className="hover:text-blue-400">
+              <Link
+                to="/About"
+                className="hover:text-blue-600 border-b-2 dark:border-b-[#0d0d0d] dark:hover:border-blue-600 border-b-white py-2 hover:border-b-blue-600 transition-all duration-200"
+              >
                 About
               </Link>
-              <Link to="/Action" className="hover:text-blue-400">
+              <Link
+                to="/Action"
+                className="hover:text-blue-600 border-b-2 dark:border-b-[#0d0d0d] dark:hover:border-blue-600 border-b-white py-2 hover:border-b-blue-600 transition-all duration-200"
+              >
                 Services
               </Link>
-              <Link to="/Contact" className="hover:text-blue-400">
+              <Link
+                to="/Contact"
+                className="hover:text-blue-600 border-b-2 dark:border-b-[#0d0d0d] dark:hover:border-blue-600 border-b-white py-2 hover:border-b-blue-600 transition-all duration-200"
+              >
                 Projects
               </Link>
+            </div>
+            <div className="flex gap-5 bg-blue-300 border-2 border-blue-400 dark:border-gray-500 dark:bg-zinc-800 px-3 py-2 rounded-full text-white">
+              <span
+                className={`cursor-pointer ${
+                  isActive === "sun" && "text-blue-600"
+                }`}
+                title="light mode"
+                onClick={() => setIsActive("sun")}
+              >
+                <BsSunFill />
+              </span>
+              <span
+                className={`cursor-pointer ${
+                  isActive === "moon" && "text-blue-600"
+                }`}
+                title="dark mode"
+                onClick={() => setIsActive("moon")}
+              >
+                <BsMoonFill />
+              </span>
             </div>
 
             <div
@@ -81,31 +113,9 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-5 ">
-          <div className="flex gap-5 bg-gray-300 dark:bg-zinc-800 px-5 py-2 rounded-full text-white">
-            <span
-              className={`cursor-pointer ${
-                isActive === "sun" && "text-blue-600"
-              }`}
-              title="light mode"
-              onClick={() => setIsActive("sun")}
-            >
-              <BsSunFill />
-            </span>
-            <span
-              className={`cursor-pointer ${
-                isActive === "moon" && "text-blue-600"
-              }`}
-              title="dark mode"
-              onClick={() => setIsActive("moon")}
-            >
-              <BsMoonFill />
-            </span>
-          </div>
-          <small className="hidden md:flex bg-black border-[2px] border-gray-300 text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center hover:bg-gray-300 hover:text-black cursor-pointer transition duration-200">
-            Contact us
-          </small>
-        </div>
+        <small className="hidden md:flex bg-gray-100 dark:bg-black border-[2px] border-blue-600 dark:border-gray-300 text-blue-600 dark:text-gray-300 rounded-3xl font-bold px-5 py-2 justify-center hover:bg-blue-600 dark:hover:bg-gray-300 hover:text-white dark:hover:text-black cursor-pointer transition duration-200">
+          Contact us
+        </small>
       </nav>
       <div
         className={`${

@@ -24,7 +24,7 @@ const Portfolio = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative flex flex-col justify-center px align-center md:hover:scale-105 transition-all duration-200"
+            className="relative flex flex-col justify-center align-center md:hover:scale-105 transition-all duration-200"
           >
             <img src={project.image} alt={project.text} className="w-full" />
             <h3 className="absolute bottom-2 left-4 font-bold text-xl">
@@ -36,7 +36,7 @@ const Portfolio = () => {
 
       {/* buttons - about us */}
       <div className="flex p-3 justify-evenly">
-        <small className="dark:bg-black bg-gray-100 border-2 dark:border-gray-300 border-blue-600 dark:text-gray-300 text-blue-600 text-base rounded-3xl py-2.5 font-bold px-10 justify-center dark:hover:bg-gray-300 hover:bg-blue-600 dark:hover:text-black hover:text-gray-100 transition-all duration-200">
+        <small className="dark:bg-[#0d0d0d] bg-gray-100 border-2 dark:border-gray-300 border-blue-600 dark:text-gray-300 text-blue-600 text-base rounded-3xl py-2.5 font-bold px-10 justify-center dark:hover:bg-gray-300 hover:bg-blue-600 dark:hover:text-black hover:text-gray-100 transition-all duration-200">
           See All Portfolio
         </small>
       </div>

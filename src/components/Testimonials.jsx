@@ -3,7 +3,7 @@ import TestimonialData from "../data/TestimonialData";
 import SectionTitle from "./SectionTitle";
 const Testimonials = () => {
   return (
-    <div className="md:my-20 dark:bg-[#0d0d0d]">
+    <div className="md:py-20 dark:bg-[#0d0d0d]">
       <SectionTitle
         sectionName="Testimonial"
         sectionDesc="People talk about us"
