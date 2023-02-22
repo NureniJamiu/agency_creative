@@ -47,7 +47,7 @@ const Navbar = () => {
   }, [isActive]);
   return (
     <>
-      <nav className="flex justify-between items-center px-[25px] dark:bg-[#0D0D0D] dark:text-white">
+      <nav className="flex justify-between items-center px-5 md:px-10 lg:px-28 dark:bg-[#0D0D0D] dark:text-white">
         <div className="cursor-pointer">
           {isActive === "sun" ? <img src={logo2} /> : <img src={logo} />}
         </div>
