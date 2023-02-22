@@ -1,21 +1,55 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
+import logo2 from "../Images/logo2.png";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState("");
+
+  const element = document.documentElement;
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  function onWindowMatch() {
+    if (
+      localStorage.isActive === "dark" ||
+      (!("isActive" in localStorage) && darkQuery.matches)
+    ) {
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+    }
+  }
+
+  onWindowMatch();
+
+  useEffect(() => {
+    switch (isActive) {
+      case "moon":
+        element.classList.add("dark");
+        localStorage.setItem("isActive", "dark");
+        break;
+      case "sun":
+        element.classList.remove("dark");
+        localStorage.setItem("isActive", "light");
+        break;
+      default:
+        localStorage.removeItem("isActive");
+        break;
+    }
+  }, [isActive]);
   return (
     <>
       <nav className="flex justify-between items-center px-[25px] dark:bg-[#0D0D0D] dark:text-white">
         <div className="cursor-pointer">
-          <img src={logo} />
+          {isActive === "sun" ? <img src={logo2} /> : <img src={logo} />}
         </div>
         <div className="flex justify-between gap-3">
           {/* hamburger for navbar */}
@@ -48,11 +82,23 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex items-center gap-5 ">
-          <div className="flex gap-5 bg-zinc-800 px-5 py-2 rounded-full">
-            <span className="">
+          <div className="flex gap-5 bg-gray-300 dark:bg-zinc-800 px-5 py-2 rounded-full text-white">
+            <span
+              className={`cursor-pointer ${
+                isActive === "sun" && "text-blue-600"
+              }`}
+              title="light mode"
+              onClick={() => setIsActive("sun")}
+            >
               <BsSunFill />
             </span>
-            <span>
+            <span
+              className={`cursor-pointer ${
+                isActive === "moon" && "text-blue-600"
+              }`}
+              title="dark mode"
+              onClick={() => setIsActive("moon")}
+            >
               <BsMoonFill />
             </span>
           </div>
