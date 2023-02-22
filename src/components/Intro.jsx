@@ -8,7 +8,7 @@ const Intro = () => {
           Make your dream <br />
           business goal come true
         </h1>
-        <p className="w-96 mx-auto text-[15px] mb-10 dark:text-gray-300 px-5 md:w-[500px] md:mb-5">
+        <p className="mx-auto text-[15px] mb-10 dark:text-gray-300 px-5 md:w-[500px] md:mb-5">
           when you need us to improve your business, then come to us. We'll help
           your business reach that goal. You just sit back and feel it.
         </p>
